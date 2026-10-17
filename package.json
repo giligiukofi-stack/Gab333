@@ -37,7 +37,7 @@
     "start": "node index.js",
     "code": "node 333.js code",
     "qr": "node 333.js qr",
-    "postinstall": "node scripts/patch-baileys-newsletter.js"
+    "postinstall": "[ -f scripts/patch-baileys-newsletter.js ] && node scripts/patch-baileys-newsletter.js || true"
   },
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
